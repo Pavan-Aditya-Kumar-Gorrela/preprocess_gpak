@@ -5,12 +5,16 @@
 
 This Python package is created by [Pavan Aditya Kumar Gorrela](https://github.com/Pavan-Aditya-Kumar-Gorrela).It provides various text preprocessing utilities for natural language processing (NLP) tasks.
 
-### Installation
-You need to install these python packages.
+### Installation from PyPI
+Run the below command in Terminal.
 ```
 pip install preprocess_gpak
 ```
-
+### Installation from github
+Run the below command in Terminal.
+```
+pip install git+https://github.com/Pavan-Aditya-Kumar-Gorrela/preprocess_gpak.git--upgrade--force-reinstall
+```
 
 ### Requirements
 You need to install these python  packages.
