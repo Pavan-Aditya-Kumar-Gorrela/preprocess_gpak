@@ -8,9 +8,9 @@ import re
 import spacy
 import unicodedata
 from bs4 import BeautifulSoup
-from textblob import TextBlob
-from textblob import Word
-from textblob.sentiments import NaiveBayesAnalyzer
+# from textblob import TextBlob
+# from textblob import Word
+# from textblob.sentiments import NaiveBayesAnalyzer
 # from googletrans import Translator
 
 from spacy.lang.en.stop_words import STOP_WORDS as stopwords
@@ -140,34 +140,34 @@ def remove_common_words(x, common_words):
 def remove_rare_words(x, rare_words):
     return ' '.join([word for word in x.split() if word not in rare_words])
 
-def correct_spelling(x):
-    words = []
-    for word in x.split():
-        w = Word(word)
-        words.append(w.correct())
+# def correct_spelling(x):
+#     words = []
+#     for word in x.split():
+#         w = Word(word)
+#         words.append(w.correct())
 
-    return ' '.join(words)
+#     return ' '.join(words)
 
-def get_noun_phrase(x):
-    blob = TextBlob(x)
-    noun_phrase = blob.noun_phrases
+# def get_noun_phrase(x):
+#     blob = TextBlob(x)
+#     noun_phrase = blob.noun_phrases
 
-    return noun_phrase
+#     return noun_phrase
 
-def n_gram(x, n=2):
-    return list(TextBlob(x).ngrams(n))
+# def n_gram(x, n=2):
+#     return list(TextBlob(x).ngrams(n))
 
 
-def singularize_words(x):
-    blob = TextBlob(x)
-    return ' '.join([word.singularize() if tag in ['NNS'] else word for word, tag in blob.tags])
+# def singularize_words(x):
+#     blob = TextBlob(x)
+#     return ' '.join([word.singularize() if tag in ['NNS'] else word for word, tag in blob.tags])
 
-def pluralize_words(x):
-    blob = TextBlob(x)
-    return ' '.join([word.pluralize() if tag in ['NN'] else word for word, tag in blob.tags])
+# def pluralize_words(x):
+#     blob = TextBlob(x)
+#     return ' '.join([word.pluralize() if tag in ['NN'] else word for word, tag in blob.tags])
 
-def sentiment_analysis(x):
-    return TextBlob(x, analyzer=NaiveBayesAnalyzer()).sentiment.classification
+# def sentiment_analysis(x):
+#     return TextBlob(x, analyzer=NaiveBayesAnalyzer()).sentiment.classification
 
 
 # def detect_language(x):
