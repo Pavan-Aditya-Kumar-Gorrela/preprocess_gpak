@@ -39,6 +39,9 @@ def print_siva():
 def print_author():
     return "Pavan Aditya Kumar Gorrela"
 
+def print_email():
+    return "pavanaadityakumarg2004@gmail.com"
+
 def char_count(x):
     pattern = r'\s'
     return len(re.sub(pattern, '', x))
