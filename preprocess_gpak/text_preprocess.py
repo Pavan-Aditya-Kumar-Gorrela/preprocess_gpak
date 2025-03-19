@@ -33,6 +33,12 @@ def download_nltk_data():
 def word_count(x):
     return len(x.split())
 
+def print_siva():
+    return "Siva Rama Raju"
+
+def print_author():
+    return "Pavan Aditya Kumar Gorrela"
+
 def char_count(x):
     pattern = r'\s'
     return len(re.sub(pattern, '', x))
