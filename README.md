@@ -8,12 +8,12 @@ This Python package is created by [Pavan Aditya Kumar Gorrela](httgp://github.co
 ### Installation from PyPI
 Run the below command in Terminal.
 ```
-pip install preprocess_gpak
+pip install preprocess-gpak==1.0.2
 ```
 ### Installation from github
 Run the below command in Terminal.
 ```
-pip install git+httgp://github.com/Pavan-Aditya-Kumar-Gorrela/preprocess_gpak.git--upgrade--force-reinstall
+pip install git+http://github.com/Pavan-Aditya-Kumar-Gorrela/preprocess_gpak.git--upgrade--force-reinstall
 ```
 
 ### Requirements
